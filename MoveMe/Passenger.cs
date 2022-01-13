@@ -10,6 +10,10 @@ namespace MoveMe
     {
         private bool _seePaysage;
 
+        /// <summary>
+        /// Cette méthode affiche un texte
+        /// </summary>
+        /// <returns>Je profite du paysage</returns>
         public string SeePaysage()
         {
             return "Je profite du paysage";

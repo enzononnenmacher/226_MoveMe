@@ -13,11 +13,18 @@ namespace MoveMe
         #endregion
 
         #region public methods
+        /// <summary>
+        /// Ceci est le constructeur de la classe Driver héritant de la classe Person
+        /// </summary>
+        /// <param name="vehicle"></param>
         public Driver(Vehicle vehicle)
         {
             _vehicle = vehicle;
         }
 
+        /// <summary>
+        /// Cette méthode va retourer un get de l'attribut privé _vehicle de type Vehicle
+        /// </summary>
         public Vehicle Vehicle
         {
             get
@@ -26,16 +33,26 @@ namespace MoveMe
             }
         }
 
+        /// <summary>
+        /// Cette méthode va faire appel à la méthode MotorStart de la classe Vehicle
+        /// </summary>
         public void StartMotor()
         {
             _vehicle.MotorStart();
         }
 
+        /// <summary>
+        /// Cette méthode va faire appel à la méthode MotorStop de la classe Vehicle
+        /// </summary>
         public void StopMotor()
         {
             _vehicle.MotorStop();
         }
 
+        /// <summary>
+        /// Cette méthode va faire appel à la méthode Sleep de classe Person et utiliser la méthode MotorStop si le moteur est allumé
+        /// </summary>
+        /// <returns>Le string de la méthode Sleep</returns>
         public override string Sleep()
         {
             if (_vehicle.MotorState == true)

@@ -15,16 +15,28 @@ namespace MoveMe
         #endregion
 
         #region public methods
+        /// <summary>
+        /// Cette méthode affiche un texte 
+        /// </summary>
+        /// <returns>Je bois</returns>
         public string Drink()
         {
             return "Je bois";
         }
 
+        /// <summary>
+        /// Cette méthode affiche un texte 
+        /// </summary>
+        /// <returns>Je mange</returns>
         public virtual string Eat()
         {
             return "Je mange";
         }
 
+        /// <summary>
+        /// Cette méthode affiche un texte 
+        /// </summary>
+        /// <returns>Je dors</returns>
         public virtual string Sleep()
         {
             return "Je dors";
